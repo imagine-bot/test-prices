@@ -17,13 +17,13 @@ const Pricing: React.FC<PricingProps> = ({ pricingTypes }) => {
     <div className="bg-gradient-to-r from-blue-200 to-blue-100 p-10 rounded-lg">
       <div className="flex justify-center mb-10">
         <button
-          className={`px-4 py-2 rounded-lg ${isAnnual ? 'bg-blue-500 text-white' : 'bg-white'}`}
+          className={`px-4 py-2 rounded-lg ${isAnnual ? 'bg-yellow-500 text-white' : 'bg-white'}`}
           onClick={() => setIsAnnual(false)}
         >
           Monthly
         </button>
         <button
-          className={`px-4 py-2 rounded-lg ${isAnnual ? 'bg-white' : 'bg-blue-500 text-white'}`}
+          className={`px-4 py-2 rounded-lg ${isAnnual ? 'bg-white' : 'bg-yellow-500 text-white'}`}
           onClick={() => setIsAnnual(true)}
         >
           Annual
@@ -39,7 +39,7 @@ const Pricing: React.FC<PricingProps> = ({ pricingTypes }) => {
                 <li key={feature}>{feature}</li>
               ))}
             </ul>
-            <button className="bg-blue-500 text-white px-4 py-2 rounded-lg">{type.cta}</button>
+            <button className="bg-yellow-500 text-white px-4 py-2 rounded-lg">{type.cta}</button>
           </div>
         ))}
       </div>
